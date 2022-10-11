@@ -64,12 +64,11 @@ a{
 }
 
 .main{
-    width: 576px;
+    width: 100%;
     grid-area: main;
 }
 
 .title{
-    width: 100%;
     height: 130px;
     display: flex;
     justify-content: center;
@@ -307,11 +306,3 @@ a{
     margin-left: 20px;
     text-align: center;
 }
-
-
-@media (max-width: 576px){
-    .cards{
-        width: 100%;
-        /* TESTE parte 184672364726347234 */
-    }
-}   
