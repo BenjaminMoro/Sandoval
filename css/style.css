@@ -9,6 +9,7 @@
 }
 
 .header{
+    position: fixed;
     display: flex;
     grid-area: header;
     border-bottom: 1px black solid;
@@ -28,6 +29,8 @@
     position: fixed;
     height: 100vh;
     width: 200px;
+    padding: 0;
+    margin: 0;
     background-color: whitesmoke;
     top: 80px;
     left: -220px;
@@ -166,10 +169,15 @@ a{
 /* -------- CATALOGO ------------*/
 
 .cardtipo{
-    font-size: 35px;
+    font-size: 28px;
     width: 100%;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+    margin-bottom: 0;
+}
+
+.cardtipo p{
+    margin-bottom: 0;
 }
 
 .cCarteras{
@@ -213,6 +221,7 @@ a{
 /* -------- SOBRE LOS PRODUCTOS ---------- */
 
 .spHechoMano{
+    text-align: center;
     margin: auto;
     margin-top: 50px;
     font-size: 25px;
@@ -228,6 +237,7 @@ a{
 
 .spCruelty{
     text-align: center;
+    margin: 15px;
     margin-top: 80px;
     font-size: 25px;
     margin-bottom: 100px;
@@ -235,69 +245,39 @@ a{
 
 
 /* --------- PREGUNTAS FRECUENTES ------------- */
-
-.pfMain{
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 40px;
-}
 .pfMain h2{
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 60px;
-    font-weight: 400;
-}
-.desplegable{
-    background: #fff;
-}
-.desplegable label{
-    display: block;
-    padding: 20px;
-    font-size: 20px;
-    background: #1c1c1c;
-    color: white;
-    cursor: pointer;
-    margin-bottom: 2px;
-    transition: all 300ms ease;
+    margin-top: 30px;
+    font-size: 26px;
 }
 
-.rDesplegable{
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 300ms ease;
-}
-
-.pDesplegable:checked ~ .rDesplegable{
-    display: flex;
-    text-align: start;
-    align-items: center;
-    font-size: 18px;
-    padding: 60px;
-}
-.pDesplegable{
-    display: none;
+.pfMain div div h2 button{
+    
 }
 
 /* -------------- CONTACTO ------------ */
+.cMain{
+    width: 100vw;
+}
 
 .cContactate{
     margin: auto;
     margin-top: 100px;
     font-size: 25px;
-    width: 80%;
     text-align: center;
+    width: 80%;
 }
 
 .cImg{
-    margin-top: 200px;
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
 }
 
 .cImg img{
-    width: 100px;
-    margin: 10px;
+    width: 70px;
     margin-bottom: 0;
 
 }
@@ -306,4 +286,96 @@ a{
     margin-right: 20px;
     margin-left: 20px;
     text-align: center;
+}
+
+
+/* RESPONSIVE */
+/* Tablet */
+@media (min-width: 768px) {
+    .cardtipo{
+        font-size: 35px;
+    }
+
+    .cImg img{
+        width: 150px;
+    }
+
+    .cImg a p{
+        font-size: 22px;
+    }
+
+}
+/* Desktop */
+
+@media (min-width:1200px){
+    /* HEADER - FOOTER */
+    .header{
+        z-index: 1;
+        height: 100px;
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 4fr;
+        grid-row: 1fr;
+        grid-template-areas: 
+        "h1 nav"
+        ;
+        background-color: white;
+    }
+
+    .header h1{
+        grid-area: h1;
+        margin-left: 20px;
+    }
+
+    .header nav{
+        height: min-content;
+        grid-area: nav;
+        margin-bottom: 10px;
+    }
+
+    .navBar{
+        z-index: 1;
+        position: relative;
+        height: min-content;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        top: 0px;
+        left: 0px;
+        border-right: none;
+        transition: all 0.2s ease;
+    }
+    
+    .header nav img{
+        width: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .header nav img:hover ~ .navBar{
+        background-color: white;
+        translate: 0px;
+    }
+    
+    .header ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header ul li{
+        list-style-type: none;
+        justify-self: center;
+        align-self: center;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+        border-bottom: none;
+        font-size: 26px;
+    }
+
+    
 }
