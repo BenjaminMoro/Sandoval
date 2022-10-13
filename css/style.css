@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
 *{
@@ -9,7 +10,6 @@
 }
 
 .header{
-    position: fixed;
     display: flex;
     grid-area: header;
     border-bottom: 1px black solid;
@@ -17,7 +17,6 @@
     height: 80px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
 }
 
 .header h1{
@@ -26,12 +25,11 @@
 }
 
 .navBar{
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     height: 100vh;
     width: 200px;
     padding: 0;
-    margin: 0;
     background-color: whitesmoke;
     top: 80px;
     left: -220px;
