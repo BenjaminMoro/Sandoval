@@ -24,6 +24,10 @@
     font-weight: 400;
 }
 
+.desplegable{
+    display: none;
+}
+
 .navBar{
     z-index: 1;
     position: fixed;
@@ -44,7 +48,7 @@
     left: 10px;
 }
 
-.header nav img:hover ~ .navBar{
+.desplegable:checked  ~ .navBar{
     background-color: white;
     translate: 200px;
 }
