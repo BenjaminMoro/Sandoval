@@ -219,39 +219,11 @@ a{
 
 /* -------- SOBRE LOS PRODUCTOS ---------- */
 
-.spHechoMano{
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    font-size: 25px;
-    width: 75%;
-
-}
-
-.spImg{
-    margin: auto;
-    margin-top: 80px;
-
-}
-
-.spCruelty{
-    text-align: center;
-    margin: 15px;
-    margin-top: 80px;
-    font-size: 25px;
-    margin-bottom: 100px;
-}
-
-
 /* --------- PREGUNTAS FRECUENTES ------------- */
 .pfMain h2{
     text-align: center;
     margin-top: 30px;
     font-size: 26px;
-}
-
-.pfMain div div h2 button{
-    
 }
 
 /* -------------- CONTACTO ------------ */
