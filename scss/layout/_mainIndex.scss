@@ -1,0 +1,79 @@
+.mainContainer{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.main{
+    width: 100%;
+    grid-area: main;
+}
+
+.title{
+    height: 130px;
+    display: flex;
+    @include JusAlicenter;
+    h1{
+        width: 0px;
+        overflow: hidden;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+.cards{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "cartera mochila"
+    "riñonera accesorio"
+    ;
+    div{
+        position: relative;
+        height: 50%;
+        height: min-content;
+        a{
+            display: flex;
+            @include JusAlicenter;
+            height: min-content;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            color: $ColorPrincipal;
+            font-size: 6vw;
+            opacity: 70%;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.card1{
+    grid-area: cartera;
+}
+
+.card2{
+    grid-area: mochila;
+}
+
+.card3{
+    grid-area: riñonera;
+}
+
+.card4{
+    grid-area: accesorio;
+}

@@ -1,0 +1,25 @@
+.cMain{
+    width: 100vw;
+}
+
+.cContactate{
+    @include mar(100px, auto, auto, auto);
+    font-size: 25px;
+    @include Tcenter;
+    width: 80%;
+}
+
+.cImg{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    @include mar(100px, auto, auto, auto);
+    img{
+        width: 70px;
+        margin-bottom: 0;
+    }
+    a{
+        @include mar(0px, 20px, 0px, 20px);
+        @include Tcenter;
+    }
+}

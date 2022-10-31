@@ -1,0 +1,59 @@
+.header{
+    z-index: 1;
+    display: flex;
+    grid-area: header;
+    border-bottom: 1px $ColorSecundario solid;
+    @include HW(80px, 100%);
+    @include JusAlicenter;
+    h1{
+        font-size: 50px;
+        font-weight: 400;
+        a{
+        margin-left: 20px;
+        }
+    }
+}
+.desplegable{
+    display: none;
+}
+
+.desplegable:hover ~ .navBar{
+    background-color: $ColorPrincipal;
+    translate: 200px;
+}
+
+.navBar{
+    z-index: 1;
+    position: fixed;
+    @include HW(100vh, 200px);
+    @include pad(0,0,0,0);
+    background-color: whitesmoke;
+    top: 80px;
+    left: -220px;
+    border-right: 1px solid black;
+    transition: all 0.2s ease;
+}
+
+.header nav img{
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.header ul li{
+    list-style-type: none;
+    @include JusAlicenter;
+    @include pad(20px,0,20px,30px);
+    border-bottom: 1px solid $ColorSecundario;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: $ColorSecundario;
+}
+
+a:hover{
+    color: $ColorSecundario;
+}

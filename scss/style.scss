@@ -1,0 +1,22 @@
+/* UTILITIES */
+@import "./utilities/function";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+/* BASE */
+@import "./base/reset";
+@import "./base/typo";
+
+/* LAYOUT */
+@import "./layout/header";
+@import "./layout/mainIndex";
+@import "./layout/footer";
+@import "./layout/mainCatalogo";
+@import "./layout/mainSobreProductos";
+@import "./layout/mainPreguntasFrecuentes";
+@import "./layout/mainContacto";
+@import "./layout/catalogoFiltro";
+
+/* Responsive */
+@import "./layout/responsive768";
+@import "./layout/responsive1200";

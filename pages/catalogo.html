@@ -25,57 +25,44 @@
             <h1><a href="../index.html">Sandoval</a></h1>
         </header>
         <main>
-            <section>
-                <div class="cTipo">
-                    <div class="cCarteras cardtipo">
-                        <p>Carteras</p>
-                    </div>
-                    <div class="cMochilas cardtipo">
-                        <p>Mochilas</p>
-                    </div>
-                    <div class="cRiñoneras cardtipo">
-                        <p>Riñoneras</p>
-                    </div>
-                    <div class="cAccesorios cardtipo">
-                        <p>Accesorios</p>
-                    </div>
-                </div>
+            <section class="cTipo">
+                    <input type="radio" name="filtro" id="carteras" >
+                    <label for="carteras" class="cCarteras cardtipo">Carteras</label>
+                    <input type="radio" name="filtro" id="mochilas">
+                    <label for="mochilas" class="cMochilas cardtipo">Mochilas</label>
+                    <input type="radio" name="filtro" id="riñoneras">
+                    <label for="riñoneras" class="cRiñoneras cardtipo">Riñoneras</label>
+                    <input type="radio" name="filtro" id="accesorios">
+                    <label for="accesorios" class="cAccesorios cardtipo">Accesorios</label>
                 <div class="cDisponibilidad">
-                    <p>Los modelos siempre estan disponibles. Los materiales varian segun disponibilidad.</p>
+                        <p>Los modelos siempre estan disponibles. Los materiales varian segun disponibilidad.</p>
                 </div>
-            </section>
-            <section class="cProductos">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/cartera-inicio.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Carterita Facherita</p>
+                <section class="cProductos">
+                    <div class="filtroCartera card m-3" style="width: 18rem;">
+                        <img src="../img/cartera-inicio.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Carterita Facherita</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/cartera-inicio.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Carterita Facherita</p>
+                    <div class="filtroMochila card m-3" style="width: 18rem;">
+                        <img src="../img/mochila-inicio.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Mochilita Facherita</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/cartera-inicio.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Carterita Facherita</p>
-                </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/cartera-inicio.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Carterita Facherita</p>
+                    <div class="filtroRiñonera card m-3" style="width: 18rem;">
+                        <img src="../img/riñonera-inicio.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Riñonerita Facherita</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/cartera-inicio.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Carterita Facherita</p>
+                    <div class="filtroAccesorio card m-3" style="width: 18rem;">
+                        <img src="../img/accesorios-inicio.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Accesorito Facherito</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
         </main>
         <footer class="footer">
             <section class="containerImg">

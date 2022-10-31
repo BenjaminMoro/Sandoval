@@ -1,0 +1,68 @@
+.cardtipo{
+    font-size: 28px;
+    width: 100%;
+    border-bottom: 1px solid $ColorSecundario;
+    border-right: 1px solid $ColorSecundario;
+    margin-bottom: 0;
+    p{
+        margin-bottom: 0;
+    }
+}
+
+.cDisponibilidad{
+    margin-top: 20px;
+    @include Tcenter;
+    grid-area: disponibilidad;
+}
+
+.cCarteras{
+    grid-area: cartera;
+}
+
+.cMochilas{
+    grid-area: mochila;
+}
+
+.cRiñoneras{
+    grid-area: riñonera;
+}
+
+.cAccesorios{
+    grid-area: accesorio;
+}
+
+.cTipo{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content 1fr;
+    @include Tcenter;
+    grid-template-areas: 
+    "cartera mochila"
+    "riñonera accesorio"
+    "disponibilidad disponibilidad"
+    "cards cards"
+    ;
+}
+
+.cProductos{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: cards;
+}
+
+.card{
+    margin: auto;
+    margin-top: 50px;
+    p{
+        @include Tcenter;
+    }
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

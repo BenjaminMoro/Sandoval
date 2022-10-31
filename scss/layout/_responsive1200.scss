@@ -1,0 +1,190 @@
+@media (min-width:1200px){
+    /* HEADER - FOOTER */
+    .header{
+        z-index: 1;
+        @include HW(120px, 100vw);
+        display: grid;
+        @include JusAlicenter;
+        grid-template-columns: 1fr 4fr;
+        grid-row: 1fr;
+        grid-template-areas: 
+        "h1 nav"
+        ;
+        background-color: white;
+        h1{
+            grid-area: h1;
+            margin-left: 20px;
+        }
+        nav{
+            height: min-content;
+            grid-area: nav;
+            margin-bottom: 10px;
+            img{
+                width: 0px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+        }
+        ul li{
+            list-style-type: none;
+            @include JusAlicenter;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 2px;
+            border-bottom: none;
+            font-size: 26px;
+            margin-right: 30px;
+            a:hover{
+                font-weight: 600;
+            }
+        }
+    }
+
+    .navBar{
+        z-index: 1;
+        position: relative;
+        @include HW(min-content, 100%);
+        padding: 0;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        top: 0px;
+        left: 0px;
+        border-right: none;
+        transition: all 0.2s ease;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .header nav img:hover ~ .navBar{
+        background-color: $ColorPrincipal;
+        translate: 0px;
+    }
+
+    .footer{
+        margin-top: 40px;
+        padding-right: 20px;
+    }
+
+    .containerImg img:hover{
+        filter:brightness(0%);
+    }
+
+    /* INDEX */
+    .title{
+        display: block;
+        height: 150px;
+        @include Tcenter;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        h1{
+            width: auto;
+            overflow: auto;
+            font-size: 100px;
+            font-weight: 300;
+            margin: 0;
+        }
+        h2{
+            font-weight: 300;
+        }
+    }
+
+    .cards{
+        grid-template-columns: repeat(4, fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "cartera mochila riñonera accesorio";
+    }
+    
+    .cardCatalogo{
+        width: 25vw;
+        a p{
+            font-size: 50px;
+            opacity: 60%;
+        }
+    }
+
+    .cardCatalogo:hover{
+        border: 1px black solid;
+        filter: brightness(50%);
+        p{
+            opacity: 100%;
+            font-size: 58px;
+        }
+    }
+
+    /* CATÁLOGO */
+    .cTipo{
+        @include mar(40px, 0px, 0px, 0px);
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: min-content min-content 1fr;
+        @include Tcenter;
+        grid-template-areas: 
+        "cartera mochila riñonera accesorio"
+        "disponibilidad disponibilidad disponibilidad disponibilidad"
+        "cards cards cards cards"
+        ;
+    }
+
+    .cardtipo{
+        font-size: 36px;
+        width: 100%;
+        border-bottom: 0px solid $ColorSecundario;
+        border-right: 0px solid $ColorSecundario;
+        @include mar(30px, 0px, 0px, 0px);
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+
+
+    .cardsCatalogo{
+        @include mar(30px, 0px, 0px, 0px);
+        font-size: 30px;
+        img{
+            border-radius: 5px;
+            width: 50%;
+        }
+    }
+
+    .cProductos{
+        @include mar(50px, 0px, 140px, 0px);
+    }
+
+    /* SOBRE LOS PRODUCTOS */
+        .spMain{ 
+            @include mar(50px, 50px, 50px, 50px);
+            section{ 
+                @include Tcenter;
+            }
+        }
+
+        .spImgs{
+            width: 60%;
+            @include Tcenter;
+        }
+
+        .spImg{
+            @include mar(0px, 50px, 0px, 50px);
+            width: 300px;
+        }
+        
+        /* PREGUNTAS FRECUENTES */
+        .pfMain{
+            @include mar(100px, 0px, 40px, 0px);
+        }
+
+        .pfh2 h2{
+            font-weight: 400;
+            @include mar(0px, 0px, 80px, 0px);
+            font-size: 50px;
+        }
+
+        /* CONTACTO */
+        .cImg a:hover{
+            filter:brightness(0%);
+        }
+}

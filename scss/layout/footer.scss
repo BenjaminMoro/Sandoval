@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    border-top: 1px solid $ColorSecundario;
+    @include mar(100px, 0px, 0px, 0px);
+    grid-area: footer;
+}
+
+.containerImg{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    img{
+        width: 70px;
+    }
+}

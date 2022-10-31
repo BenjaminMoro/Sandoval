@@ -1,0 +1,23 @@
+#carteras:checked ~ .cProductos{
+    .filtroMochila, .filtroRiñonera, .filtroAccesorio{ 
+        display: none;
+    }
+}
+
+#mochilas:checked ~ .cProductos{
+    .filtroCartera, .filtroRiñonera, .filtroAccesorio{ 
+        display: none;
+    }
+}
+
+#riñoneras:checked ~ .cProductos{
+    .filtroMochila, .filtroCartera, .filtroAccesorio{ 
+        display: none;
+    }
+}
+
+#accesorios:checked ~ .cProductos{
+    .filtroMochila, .filtroRiñonera, .filtroCartera{ 
+        display: none;
+    }
+}

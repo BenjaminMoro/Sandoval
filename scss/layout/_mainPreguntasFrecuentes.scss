@@ -1,0 +1,7 @@
+.pfMain h2{
+    @include Tcenter;
+    @include mar(30px, 0px, 0px, 0px);
+    font-size: 26px;
+}
+
+/* Demas con Bootstrap */

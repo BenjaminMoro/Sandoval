@@ -1,0 +1,28 @@
+@mixin Tcenter {
+    text-align: center;
+}
+
+@mixin JusAlicenter {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin HW ($height, $widht){
+    height:$height;
+    width:$widht;
+}
+
+@mixin pad($pt, $pr, $pb, $pl) {
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+    
+}
+
+@mixin mar($mt, $mr, $mb, $ml) {
+    margin-top: $mt;
+    margin-right: $mr;
+    margin-bottom: $mb;
+    margin-left: $ml;   
+}
