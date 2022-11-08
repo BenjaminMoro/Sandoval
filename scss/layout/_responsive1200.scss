@@ -139,8 +139,6 @@
         }
     }
 
-
-
     .cardsCatalogo{
         @include mar(30px, 0px, 0px, 0px);
         font-size: 30px;
@@ -151,12 +149,12 @@
     }
 
     .cProductos{
-        @include mar(50px, 0px, 140px, 0px);
+        @include mar(50px, 0px, 120px, 0px);
     }
 
     /* SOBRE LOS PRODUCTOS */
         .spMain{ 
-            @include mar(50px, 50px, 50px, 50px);
+            @include mar(50px, 50px, 0px, 50px);
             section{ 
                 @include Tcenter;
             }
