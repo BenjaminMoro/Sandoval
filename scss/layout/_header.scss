@@ -17,7 +17,7 @@
     display: none;
 }
 
-.desplegable:hover ~ .navBar{
+.desplegable:checked ~ .navBar{
     background-color: $ColorPrincipal;
     translate: 200px;
 }

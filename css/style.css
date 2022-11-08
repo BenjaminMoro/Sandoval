@@ -29,7 +29,7 @@
 .desplegable {
   display: none; }
 
-.desplegable:hover ~ .navBar {
+.desplegable:checked ~ .navBar {
   background-color: white;
   translate: 200px; }
 
